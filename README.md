@@ -59,3 +59,4 @@ python manage.py migrate
 
 # 4. Run tests
 pytest
+"testing"
