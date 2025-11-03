@@ -76,8 +76,8 @@ jobs:
       # Step 7: Run tests with coverage
       - name: Run tests with coverage
         run: |
-          coverage run -m pytest --disable-warnings -q
-          coverage xml
+          pytest --disable-warnings --cov=. --cov-report=xml --cov-report=term-missing
+
 
       # Step 8: Upload coverage artifact
       - name: Upload coverage artifact
